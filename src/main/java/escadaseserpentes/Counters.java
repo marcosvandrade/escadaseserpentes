@@ -23,6 +23,11 @@ public class Counters implements Printable {
 			System.out.format("Jogador '%s' está na posição %s\n", counter.getName(), counter.getCurrentSpace());
 		}		
 	}
+
+	public Counter next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }
