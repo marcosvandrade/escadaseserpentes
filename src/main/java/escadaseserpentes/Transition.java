@@ -5,15 +5,18 @@ public class Transition {
 	public enum Type {
 		SNAKE, LADDER;
 	}
-	
+
 	private Space spaceFrom;
 	private Space spaceTo;
 	private Type type;
-	
+
 	public Transition(Space spaceFrom, Space spaceTo) {
 		this.spaceFrom = spaceFrom;
 		this.spaceTo = spaceTo;
-		// if com operador ternário
+		
+		/**
+		 * if com operador ternário
+		 */
 		this.type = spaceFrom.getNumber() < spaceTo.getNumber() ? Type.LADDER : Type.SNAKE;
 	}
 
@@ -28,5 +31,5 @@ public class Transition {
 	public Type getType() {
 		return type;
 	}
-		
+
 }

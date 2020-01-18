@@ -5,11 +5,11 @@ public class Space {
 	public enum Type {
 		START_HERE, HOME, REGULAR;
 	}
-	
+
 	private int number;
 	private Type type;
 	private Transition transition;
-	
+
 	public Space(int number, Type type) {
 		this.number = number;
 		this.type = type;
@@ -22,7 +22,7 @@ public class Space {
 	public Type getType() {
 		return type;
 	}
-	
+
 	public Transition getTransition() {
 		return transition;
 	}
@@ -34,10 +34,10 @@ public class Space {
 	@Override
 	public String toString() {
 		if (type == Type.REGULAR) {
-			return String.valueOf(number);		
+			return String.valueOf(number);
 		} else {
-		return number + " (" + type + ")";
+			return number + " (" + type + ")";
 		}
 	}
-	
+
 }
