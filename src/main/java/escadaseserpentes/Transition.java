@@ -17,6 +17,7 @@ public class Transition {
 		/**
 		 * if com operador ternário
 		 */
+		
 		this.type = spaceFrom.getNumber() < spaceTo.getNumber() ? Type.LADDER : Type.SNAKE;
 	}
 

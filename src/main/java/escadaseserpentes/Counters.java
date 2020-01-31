@@ -3,8 +3,6 @@ package escadaseserpentes;
 public class Counters implements Printable {
 
 	private Counter[] counters;
-	private int currentCounterIndex;
-
 	public Counters(Board board, int numPlayers) {
 		counters = new Counter[numPlayers];
 		char currentName = 'A';
